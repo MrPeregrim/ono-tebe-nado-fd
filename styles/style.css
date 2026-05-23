@@ -42,7 +42,7 @@
     text-underline-offset: 4px;
 }
 
-.nav-item:first-child a{
+.nav-item:first-child a {
     text-decoration: none;
 }
 
@@ -62,11 +62,6 @@
 
 
 /*  */
-.contact-tel,
-.contact-mail {
-    text-decoration: underline;
-    text-underline-offset: 4px;
-}
 
 /* .header-contact {
 max-width: 214px;
@@ -83,6 +78,8 @@ max-width: 214px;
     font-size: 18px;
     line-height: 1.35;
     text-underline-position: under;
+    text-decoration: underline;
+    text-underline-offset: 4px;
 }
 
 .contact-adress {
