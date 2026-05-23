@@ -95,7 +95,7 @@ max-width: 214px;
 /* Блок info */
 .info-container {
     position: relative;
-    background-image: url(/images/cover.jpg);
+    background-image: url(../images/cover.jpg);
     background-repeat: round;
 }
 
@@ -227,21 +227,21 @@ max-width: 214px;
 }
 
 .card-img-1 {
-    background-image: url(/images/card-lot-01.jpg);
+    background-image: url(../images/card-lot-01.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .card-img-2 {
-    background-image: url(/images/card-lot-02.jpg);
+    background-image: url(../images/card-lot-02.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .card-img-3 {
-    background-image: url(/images/card-lot-03.jpg);
+    background-image: url(../images/card-lot-03.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
