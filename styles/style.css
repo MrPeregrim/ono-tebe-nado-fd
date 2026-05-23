@@ -10,14 +10,15 @@
 .header {
     display: grid;
     grid-template-columns: 1.5fr 2fr 1.5fr;
-    place-items: center;
-    padding: 92px 51px 89px;
+    justify-items: center;
+    align-items: center;
+    padding: 92px 51px 92px;
 }
 
 .nav-list {
     display: flex;
     gap: 32px;
-    align-items: anchor-center;
+    align-items: center;
 }
 .nav-item {
     list-style: circle;
@@ -42,16 +43,16 @@
     text-underline-offset: 4px;
 }
 
-.nav-item:first-child a {
+.nav-item-active {
     text-decoration: none;
 }
 
 /* Логотип шапки центр */
 
 .header-logo-link {
-    position: relative;
-    right: 59px;
-    justify-content: center;
+    display: grid;
+    justify-self: start;
+    margin-left: 43px;
     align-self: center;
     width: 140px;
 }
@@ -63,17 +64,12 @@
 
 /*  */
 
-/* .header-contact {
-max-width: 214px;
-} */
-
-.header-contact {
-    max-width: 217px;
+.address {
+    max-width: 260px;
     font-style: inherit;
 }
 
-.contact-tel,
-.contact-mail {
+.address-link {
     display: block;
     font-size: 18px;
     line-height: 1.35;
@@ -94,48 +90,54 @@ max-width: 214px;
     position: relative;
     background-image: url(../images/cover.jpg);
     background-repeat: round;
+    z-index: 1;
 }
 
 .overlay {
     position: absolute;
     top: 0;
+    left: 0;
+    right: 0;
     bottom: 0;
-    width: 100%;
-    height: 100%;
+    width: auto; 
+    height: auto;
     background: rgba(0, 0, 0, 1);
     opacity: 0.6;
     z-index: 1;
 }
 
-.title-h1 {
+.info-title {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    padding: 165px 50px 145px 50px;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    align-items: center;
+    padding: 165px 50px 105px 50px;
     z-index: 2;
+    gap: 20px;
 }
 
 .title-h1-span {
-    display: flex;
     color: rgba(255, 255, 255, 1);
+    text-transform: uppercase;
     font-size: 100px;
     font-weight: 700;
     line-height: 115%;
     letter-spacing: 30px;
 }
 
-.text-h1-2 {
-    position: relative;
-    justify-content: center;
-    top: 20px;
-    left: 15px;
+.info-text-one {
+    justify-self: start;
 }
 
-.text-h1-3 {
-    position: relative;
-    justify-content: flex-end;
-    top: 40px;
-    left: 30px
+.info-text-two {
+    justify-self: center; 
+    margin-left: 30px;
+}
+
+.info-text-three {
+    justify-self: end;
+    max-width: 385px;
+    
 }
 
 .info-bet {
@@ -152,7 +154,7 @@ max-width: 214px;
     font-size: 22px;
     font-weight: 400;
     line-height: 28px;
-    letter-spacing: 14%;
+    word-spacing: 19px;
     text-align: left;
     text-transform: uppercase;
 }
@@ -165,7 +167,6 @@ max-width: 214px;
     padding: 12px 32px;
     font-size: 22px;
     line-height: 26px;
-    letter-spacing: 0%;
     text-align: center;
     text-transform: uppercase;
 }
@@ -179,82 +180,73 @@ max-width: 214px;
 .title-h2-lots {
     color: rgba(0, 0, 0, 1);
     padding: 180px 0 27px 40px;
-    font-style: Bold;
     font-size: 40px;
     font-weight: 700;
     line-height: 47px;
-    letter-spacing: 0%;
     text-align: left;
     text-transform: uppercase;
 }
 
 .lots-card-ul {
     display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 30px;
+    gap: 25px;
+    flex-wrap: wrap;
 }
 
 .lots-card-li {
     position: relative;
-    max-width: 334px;
+    width: 334px; 
+    height: 596px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin-right: 25px;
     padding: 48px 40px;
     text-underline-offset: 3px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .lots-card-li:last-child {
     margin-right: 0;
 }
 
-.overlay2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.6;
-    background-color: rgba(0, 0, 0, 0.6);
-}
 
 .card-li-link {
-    position: relative;
-    z-index: 2;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    height: 100%;
 }
 
-.card-img-1 {
+.card-img-one {
     background-image: url(../images/card-lot-01.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    
 }
 
-.card-img-2 {
+.card-img-two {
     background-image: url(../images/card-lot-02.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
-.card-img-3 {
+.card-img-three {
     background-image: url(../images/card-lot-03.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 .title-h3-card {
     color: rgba(255, 255, 255, 1);
     margin-bottom: 35px;
-    font-style: Bold;
     font-size: 22px;
     font-weight: 700;
-    line-height: 120%;
-    letter-spacing: 0%;
+    line-height: 1.2;
     text-align: left;
-    text-decoration-line: underline;
+    text-decoration: underline;
     text-transform: uppercase;
+    z-index: 2;
 }
 
 .card-text {
@@ -263,13 +255,11 @@ max-width: 214px;
     color: rgba(255, 255, 255, 1);
     font-size: 20px;
     font-weight: 400;
-    line-height: 120%;
-    letter-spacing: 0%;
+    line-height: 1.2;
     text-align: left;
 }
 
 .lots-btn {
-    padding-top: 30px;
     margin-left: 40px;
     color: rgba(0, 0, 0, 1);
     border-bottom: 1px solid rgba(0, 0, 0, 1);
@@ -322,7 +312,6 @@ max-width: 214px;
     font-size: 40px;
     font-weight: 700;
     line-height: 47px;
-    letter-spacing: 0%;
     text-align: left;
     text-transform: uppercase;
 }
@@ -333,7 +322,6 @@ max-width: 214px;
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
-    letter-spacing: 0%;
     text-align: left;
 }
 
@@ -346,21 +334,18 @@ max-width: 214px;
 
 .footer {
     padding: 0 50px 82px;
-    display: flex;
+    display: grid;
+    grid-auto-flow: column;
     justify-content: space-between;
 }
 
-.footer-info {
-    max-width: 264px;
-}
-
 .footer-list {
-    place-items: center;
+    justify-items: center;
+    align-items: center;
 }
 
 .footer-nav {
-    position: relative;
-    right: 12px;
+    margin-left: -24px;
 }
 
 .footer-item-link {
@@ -369,11 +354,10 @@ max-width: 214px;
     font-size: 18px;
     font-weight: 400;
     line-height: 21px;
-    letter-spacing: 0%;
     text-align: center;
 }
 
-.footer-item:first-child .footer-item-link {
+.footer-item-bottom {
     border-bottom: none;
 }
 

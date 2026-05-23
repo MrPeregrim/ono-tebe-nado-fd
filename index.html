@@ -16,7 +16,7 @@
     <nav class="header-nav">
       <ul class="nav-list">
         <li class="nav-item">
-          <a href="#info" class="nav-item-link">главная</a>
+          <a href="#info" class="nav-item-link nav-item-active">главная</a>
         </li>
         <li class="nav-item">
           <a href="#lots" class="nav-item-link">посмотреть лоты</a>
@@ -28,14 +28,14 @@
     </nav>
     <!-- Логотип шапки сайта -->
     <a href="#" class="header-logo-link">
-      <img src="images/logo-black.svg" alt="" class="header-logo-img">
+      <img src="images/logo-black.svg" alt="Логотип 'Оно тебе надо'" class="header-logo-img">
     </a>
     <!-- Правая сторона для контактов -->
-    <address class="header-contact">
-      <a href="tel:+99995555555" class="contact-tel">+9 (999) 555 5555</a>
-      <a href="mailto:info@sobaka.ge" class="contact-mail">info@sobaka.ge</a>
+    <address class="address">
+      <a href="tel:+99995555555" class="address-link">+9 999 555 5555</a>
+      <a href="mailto:info@sobaka.ge" class="address-link">info@sobaka.ge</a>
       <p class="contact-adress">
-        наб. Принсенграхт 263- 265, Амстердам
+        наб. Принсенграхт 263-<br>265, Амстердам
       </p>
     </address>
   </header>
@@ -44,14 +44,14 @@
       <div class="info-container">
         <div class="overlay">
         </div>
-        <h1 class="title-h1">
-          <span class="title-h1-span text-h1-1">
+        <h1 class="info-title">
+          <span class="title-h1-span info-text-one">
             ОНО
           </span>
-          <span class="title-h1-span text-h1-2">
+          <span class="title-h1-span info-text-two">
             ТЕБЕ
           </span>
-          <span class="title-h1-span text-h1-3">
+          <span class="title-h1-span info-text-three">
             НАДО
           </span>
         </h1>
@@ -72,50 +72,54 @@
           Лоты
         </h2>
         <ul class="lots-card-ul">
-          <li class="lots-card-li card-img-1">
-            <div class="overlay2"></div>
-            <a href="#" class="card-li-link">
-              <h3 class="title-h3-card">
-                Фильм режиссёра, который бросил киношколу
-              </h3>
+          <li class="lots-card-list-item">
+            <a href="#" class="card-li-link"> 
+              <article class="card-img-one lots-card-li">
+                <div class="overlay"></div>
+                <h3 class="title-h3-card">
+                  Фильм режиссёра, который бросил киношколу
+                </h3>
+                <p class="card-text">
+                  Не&nbsp;просто бросил, а&nbsp;ушёл с&nbsp;первой лекции. 
+                  Какой была&nbsp;бы ваша ставка, если&nbsp;бы вы&nbsp;не&nbsp;знали, что режиссёр&nbsp;&mdash; Пол Томас Андерсон?
+                </p>
+              </article>
             </a>
-            <p class="card-text">
-              Не&nbsp;просто бросил, а&nbsp;ушёл с&nbsp;первой лекции. 
-              Какой была&nbsp;бы ваша ставка, если&nbsp;бы вы&nbsp;не&nbsp;знали, что режиссёр&nbsp;&mdash; Пол Томас Андерсон?
-            </p>
           </li>
-          <li class="lots-card-li card-img-2">
-            <div class="overlay2">
-              
-            </div>
-            <a href="#" class="card-li-link">
-              <h3 class="title-h3-card">
-                Книга, где описан один скучный день из&nbsp;жизни рекламного агента
-              </h3>
+          <li class="lots-card-list-item">
+            <a href="#" class="card-li-link"> 
+              <article class="card-img-two lots-card-li">
+                <div class="overlay"></div>
+                <h3 class="title-h3-card">
+                  Книга, где описан один скучный день из&nbsp;жизни рекламного агента
+                </h3>
+                <p class="card-text">
+                  Объёмом почти в&nbsp;тысячу страниц. Иногда без знаков препинания и&nbsp;с&nbsp;переходами на&nbsp;древнеанглийский. 
+                  В&nbsp;ней одновременно рассказывается о&nbsp;16&nbsp;июня 1904 года и&nbsp;об&nbsp;истории литературы, начиная с&nbsp;античных времён. 
+                  И&nbsp;это всё накладывается на&nbsp;эпическую поэму Гомера. Сколько&nbsp;бы вы&nbsp;поставили на&nbsp;&laquo;Улисса&raquo; Джеймса Джойса?
+                </p>
+              </article>
             </a>
-            <p class="card-text">
-              Объёмом почти в&nbsp;тысячу страниц. Иногда без знаков препинания и&nbsp;с&nbsp;переходами на&nbsp;древнеанглийский. 
-              В&nbsp;ней одновременно рассказывается о&nbsp;16&nbsp;июня 1904 года и&nbsp;об&nbsp;истории литературы, начиная с&nbsp;античных времён. 
-              И&nbsp;это всё накладывается на&nbsp;эпическую поэму Гомера. Сколько&nbsp;бы вы&nbsp;поставили на&nbsp;&laquo;Улисса&raquo; Джеймса Джойса?
-            </p>
           </li>
-          <li class="lots-card-li card-img-3">
-            <div class="overlay2"></div>
-            <a href="#" class="card-li-link">
-              <h3 class="title-h3-card">
-                Картина, которую повторит даже 5-летний сын маминой подруги
-              </h3>
+          <li class="lots-card-list-item">
+            <a href="#" class="card-li-link"> 
+              <article class="card-img-three lots-card-li">
+                <div class="overlay"></div>
+                <h3 class="title-h3-card">
+                  Картина, которую повторит даже 5-летний сын маминой подруги
+                </h3>
+                <p class="card-text">
+                  Ну&nbsp;действительно, там линия, тут кружочек, а&nbsp;здесь и&nbsp;вовсе что-то похожее на&nbsp;инфузорию-туфельку. 
+                  Никаких полей, лесов, котиков... 
+                  Сколько&nbsp;бы вы&nbsp;на&nbsp;такое поставили, если&nbsp;бы не&nbsp;знали, что это&nbsp;&mdash; одна из&nbsp;революционных работ Кандинского?
+                </p>
+              </article>
             </a>
-            <p class="card-text">
-              Ну&nbsp;действительно, там линия, тут кружочек, а&nbsp;здесь и&nbsp;вовсе что-то похожее на&nbsp;инфузорию-туфельку. 
-              Никаких полей, лесов, котиков... 
-              Сколько&nbsp;бы вы&nbsp;на&nbsp;такое поставили, если&nbsp;бы не&nbsp;знали, что это&nbsp;&mdash; одна из&nbsp;революционных работ Кандинского?
-            </p>
           </li>
         </ul>
-        <button class="lots-btn btn-reset">
+        <a href="#" class="lots-btn btn-reset">
           посмотреть больше
-        </button>
+        </a>
       </div>
     </section>
     <section id="auction" class="auction">
@@ -147,9 +151,9 @@
     </section>
   </main>
   <footer class="footer">
-    <address class="footer-info">
-      <a href="tel:+99995555555" class="contact-tel">+9 (999) 555 5555</a>
-      <a href="mailto:info@sobaka.ge" class="contact-mail">info@sobaka.ge</a>
+    <address class="address">
+      <a href="tel:+99995555555" class="address-link">+9 (999) 555 5555</a>
+      <a href="mailto:info@sobaka.ge" class="address-link">info@sobaka.ge</a>
       <p class="contact-adress footer-adress">
         наб. Принсенграхт 263- 265, Амстердам
       </p>
@@ -157,7 +161,7 @@
     <nav class="footer-nav">
       <ul class="footer-list">
         <li class="footer-item">
-          <a href="#info" class="footer-item-link">
+          <a href="#info" class="footer-item-link footer-item-bottom">
             главная
           </a>
         </li>
