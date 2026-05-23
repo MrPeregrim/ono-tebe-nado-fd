@@ -1,1 +1,398 @@
-/* место для вашего кода */
+/* Обнуление кнопки */
+.btn-reset {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+/* Header */
+/* Левая сторона навигации */
+.header {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr 1.5fr;
+    place-items: center;
+    padding: 92px 51px 89px;
+}
+
+.nav-list {
+    display: flex;
+    gap: 32px;
+    align-items: anchor-center;
+}
+.nav-item {
+    list-style: circle;
+}
+
+.nav-item::marker {
+    font-size: 20px;
+}
+
+.nav-item:first-child {
+    list-style: none;
+}
+
+.nav-item:last-child {
+    margin-right: 0;
+}
+
+.nav-item-link {
+    font-size: 18px;
+    white-space: nowrap;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.nav-item:first-child a{
+    text-decoration: none;
+}
+
+/* Логотип шапки центр */
+
+.header-logo-link {
+    position: relative;
+    right: 59px;
+    justify-content: center;
+    align-self: center;
+    width: 140px;
+}
+
+.header-logo-img {
+    width: 100%;
+}
+
+
+/*  */
+.contact-tel,
+.contact-mail {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+/* .header-contact {
+max-width: 214px;
+} */
+
+.header-contact {
+    max-width: 217px;
+    font-style: inherit;
+}
+
+.contact-tel,
+.contact-mail {
+    display: block;
+    font-size: 18px;
+    line-height: 1.35;
+    text-underline-position: under;
+}
+
+.contact-adress {
+    font-size: 18px;
+    line-height: 1.35;
+}
+
+
+/* Main */
+/* Блок info */
+.info-container {
+    position: relative;
+    background-image: url(/images/cover.jpg);
+    background-repeat: round;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 1);
+    opacity: 0.6;
+    z-index: 1;
+}
+
+.title-h1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 165px 50px 145px 50px;
+    z-index: 2;
+}
+
+.title-h1-span {
+    display: flex;
+    color: rgba(255, 255, 255, 1);
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 115%;
+    letter-spacing: 30px;
+}
+
+.text-h1-2 {
+    position: relative;
+    justify-content: center;
+    top: 20px;
+    left: 15px;
+}
+
+.text-h1-3 {
+    position: relative;
+    justify-content: flex-end;
+    top: 40px;
+    left: 30px
+}
+
+.info-bet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px 50px;
+}
+
+.info-text {
+    position: relative;
+    z-index: 2;
+    color: rgba(255, 255, 255, 1);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 14%;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.info-btn {
+    position: relative;
+    z-index: 2;
+    color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(255, 255, 255, 1);
+    padding: 12px 32px;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Лоты */
+
+.container-lots {
+    margin: 0 24px;
+}
+
+.title-h2-lots {
+    color: rgba(0, 0, 0, 1);
+    padding: 180px 0 27px 40px;
+    font-style: Bold;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 47px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.lots-card-ul {
+    display: flex;
+}
+
+.lots-card-li {
+    position: relative;
+    max-width: 334px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 25px;
+    padding: 48px 40px;
+    text-underline-offset: 3px;
+}
+
+.lots-card-li:last-child {
+    margin-right: 0;
+}
+
+.overlay2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.card-li-link {
+    position: relative;
+    z-index: 2;
+}
+
+.card-img-1 {
+    background-image: url(/images/card-lot-01.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card-img-2 {
+    background-image: url(/images/card-lot-02.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card-img-3 {
+    background-image: url(/images/card-lot-03.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.title-h3-card {
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 35px;
+    font-style: Bold;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: left;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+}
+
+.card-text {
+    position: relative;
+    z-index: 2;
+    color: rgba(255, 255, 255, 1);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.lots-btn {
+    padding-top: 30px;
+    margin-left: 40px;
+    color: rgba(0, 0, 0, 1);
+    border-bottom: 1px solid rgba(0, 0, 0, 1);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    text-align: left;
+}
+
+/* Об аукционе */
+
+.auction {
+    padding-top: 155px;
+    margin-left: 71px;
+    margin-right: 29px;
+    padding-bottom: 180px;
+}
+
+.container-auction {
+    display: flex;
+}
+
+.auction-img-block {
+    padding-right: 72px;
+}
+
+.auction-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    background-color: #000000;
+}
+
+.logo-white {
+    width: 148px;
+}
+
+.auction-text-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.auction-title-h2 {
+    padding-top: 101px;
+    padding-bottom: 100px;
+    color: rgba(0, 0, 0, 1);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 47px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.text-auction {
+    padding-bottom: 24px;
+    color: rgba(0, 0, 0, 1);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.text-auction:last-child {
+    padding-bottom: 0;
+}
+
+
+/* Footer */
+
+.footer {
+    padding: 0 50px 82px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-info {
+    max-width: 264px;
+}
+
+.footer-list {
+    place-items: center;
+}
+
+.footer-nav {
+    position: relative;
+    right: 12px;
+}
+
+.footer-item-link {
+    border-bottom: 1px solid rgba(0, 0, 0, 1);
+    color: rgba(0, 0, 0, 1);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.footer-item:first-child .footer-item-link {
+    border-bottom: none;
+}
+
+.footer-svg {
+    display: flex;
+}
+
+.svg-icon {
+    width: auto;
+    height: 48px;
+}
+
+.footer-img {
+    margin-right: 48px;
+}
+
+.footer-img:last-child {
+    margin-right: 0;
+}
